@@ -1,0 +1,17 @@
+1.내용이 없으면 종료태그가 없음 = empty tag : br hr img meta
+
+2.emmet: >(자식)  +(형제)  ^(부모) *(반복)  {}텍스트 ${일련숫자}
+
+3.컨테이너: element 즉 컨텐츠를 담는 것 
+header,nav,selection,article,aside,footer --> 레이아웃(sementic)
+
+4.div : 공간분할
+ #: id(이름이 유니크해야함)     . : class (동일한 이름 사용가능)
+ span
+
+5.글꼴: b,i,h1~h6,p,br ~~~
+
+6.이미지 : <img src=" "/>
+7.목록태그 : ul ,ol , dl  
+                li
+ 
