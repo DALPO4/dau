@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      color: #140c0c;
+    }
+    h1 {background-color: aqua;}
+    .item{
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      margin: 20px 30px 40px 100px;  한개만 적으면 다 바뀌고 두개 적으면 위아래, 왼쪽 오른쪽 네개 다 적으면 시계뱡향으로 적용
+      문제예시: 이 아이템 클래스의 크기는 얼마인가?(클래스아이템에 해당하는 크기)
+      padding: 30px;
+    }
+    .color1 {
+      background-color: beige;
+    }
+    .color2 {
+      background-color: rgb(123, 210, 30);
+    }
+    .color3 {
+    background-color: darkblue;
+    }
+    .color4 {
+      background-color: antiquewhite;
+    }
+    .color5 {
+      background-color: rgb(96, 50, 204);
+    }
+    #navi {
+      color : gold;
+    }
+    a {
+      text-decoration: none;
+      color : rgb(0, 128, 2);
+    }
+    #navi li a:hover {
+      background-color:yellow;
+    }
+    li {
+      list-style: none;
+    }
+  
+  </style>
+
+</head>
+
+
+<body>
+
+  <h1>1810124 정민수</h1>
+
+  <!--.item.color${$$}*5-->
+  <div class="item color1">01</div>
+  <div class="item color2">02</div>
+  <div class="item color3">03</div>
+  <div class="item color4">04</div>
+  <div class="item color5">05</div>
+
+  <div id="navi">   <!--.navi>ul>li*4>a{메인메뉴$}-->
+    <ul>
+      <li><a href="">메인메뉴1</a></li>
+      <li><a href="">메인메뉴2</a></li>
+      <li><a href="">메인메뉴3</a></li>
+      <li><a href="">메인메뉴4</a></li>
+    </ul>
+  </div>
+</body>
+</html>
