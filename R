@@ -1,0 +1,37 @@
+rm(list=ls())
+a <- matrix(11:50,nrow=4)
+a
+colnames(a) <- paste('col',c(1:10))
+a  
+
+rownames(a) <- paste('row',c(1:4))
+a
+
+rownames(a) <- c('정민수','이상헌','박창민','김태형')
+a
+
+
+# %*% 메트릭스 연산
+b <- matrix(1:4,2,byrow=T)
+b
+solve(b)
+d <- solve(b)
+d
+e <- b %*% d
+
+round(e)
+
+
+# %*%
+
+
+
+x <- array(1:8,c(2,2,4))
+x
+
+#array의 행,열,차원의이름을 지정할때는
+#list형태의 데이터로 이름을 지정해주어야함
+#난 좀 편하게 할려고 paste함수를 이용함
+dimnames(x) <- list(paste('row',1:2),paste('col',1:2),paste('array',1:4))
+x
+
