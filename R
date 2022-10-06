@@ -35,3 +35,13 @@ x
 dimnames(x) <- list(paste('row',1:2),paste('col',1:2),paste('array',1:4))
 x
 
+x[1,,]
+
+#list는 여러가지 데이터타입을 하나의 데이터셋으로 묶을 수 있음
+#list는 인덱싱을 [[ ]] 대괄호 2개를 쓴다
+msprofile <- list(name='정민수',학번=1810124,수강과목=c('빅데이터 분석','미시거시시'))
+msprofile
+
+msprofile$학번
+msprofile[[2]]  
+msprofile[2]  
