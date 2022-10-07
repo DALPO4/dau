@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head> 
+    <!-- meta 태그는 웹페이지의 저자,인코딩방식,내용등을 넣음 -->
+
+    <!-- charset 속성으로 웹 페이지에 사용하는 문자 코드 지정 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name = "author" content="정민수" />
+
+    <!-- 웹 페이지의 키워드(검색 엔진에 의해 검색되게 하기 위함. 즉 검색엔진에 빅데이터,django 등을 치면 내 웹페이지가 나오게끔 ) -->
+    <meta name="keywords" content="빅데이터, django,python" />
+    <title>Welcome to minsu Shopping Mall</title>
+    <script src="https://kit.fontawesome.com/79fc7c4492.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            font-family: "맑은 고딕",Arial, Helvetica, sans-serif;
+            line-height: 150%;
+        }
+        header h1{
+            display: inline;
+            font-size: 1.2em;
+        }
+        ul{
+            list-style-type: none;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        nav ul{
+            border-top: 2px solid rgb(140, 255, 0);
+            border-bottom: 2px solid rgb(140, 255, 0);
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav ul li{
+            display: inline;
+            padding: 15px 20px;
+            letter-spacing: 5px;
+        }
+        nav ul li:hover{
+            background-color: rgb(140, 255, 0) ;
+        }
+
+        .photo img{
+            padding-top: 50px;
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+        }
+        table th{
+            background-color: rgb(140, 255, 0) ;
+        }
+        table{
+            width: 90%;
+            margin: 0 auto;
+            font-size: 1.2em;
+
+        }
+        .right{
+            margin-top: 30px;
+        }
+        body{
+            width: 80vw;
+            margin: 0 auto;
+            background-color: azure;
+        }
+        header,footer{
+            height: 100px;
+            font-size: 1.4em;
+        }
+        nav{
+            height: 50px;
+        }
+        section{
+            display: flex;
+        }      
+        .content{
+            flex:4;
+        }
+        aside{
+            flex:1;
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <header id="home">
+    <i class="fa-solid fa-bars"></i>
+    <h1> Minsu Site</h1>
+    </header>
+
+    <nav> 
+        <!-- ul>li*5>a{메인메뉴$} -->
+        <ul>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">쇼핑물</a></li>
+            <li><a href="#">패키지</a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="#./gallery.html">갤러리</a></li>
+        </ul>
+
+    </nav>
+
+
+    <section>
+        <div class="content">        <!--섹션안에 아티컬이 많아서 div로 묶어줌-->
+        <article>
+            <div class="photo"> <!--.:class, #: id-->
+                <img src="./images/bigdata.jpg" alt="bigdata 이미지">
+                
+            </div>
+<br><br><br>
+<h2>대외활동리스트</h2>  
+            <!-- table>(tr>th*3)>tr*3>td*3 -->
+            <table> 
+                <tr>
+                    <th>기간</th>
+                    <th>대외활동</th>
+                    <th>주최</th>
+                </tr>
+                <tr>
+                    <td>2021.3.</td>
+                    <td>마케팅전략 경진대회</td>
+                    <td>정보시스템학회</td>
+                </tr>
+                <tr>
+                    <td>2022.05.</td>
+                    <td>롯데 빅데이터 경진대회</td>
+                    <td>롯데그룹</td>
+                </tr>
+                <tr>
+                    <td>2022.06.</td>
+                    <td>머신러닝 교육프로그램</td>
+                    <td>동아대학교</td>
+                </tr>
+            </table>
+
+        </article>
+        
+        
+
+        <article>
+            <div class="media">
+                <h2>좋아하는 음악</h2>
+                <audio src="./media/music01.mp3" autoplay controls></audio>
+
+                <br>
+
+                <h2>곰을 살리자</h2>
+                <video src="./media/movie.mp4" controls width="50%"></video> 
+
+                <h3>휘성 결혼까지 생각했어</h3>
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/xVU-UUKHYeQ" title="휘성 파이널 라운드 미션곡, '결혼까지 생각했어'♬ - 히든싱어2 9회 [휘성 편]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+            </div>
+
+        </article>
+        
+        <article>
+            <div class="gallery">
+                <iframe src="./gallery.html" width=60%" height="300"frameborder="0"></iframe>
+            </div>
+        </article>
+
+        </div>
+        <aside class="right"> 
+            <div class="login">
+                <h2>로그인</h2>
+                <form action="#" method="post">
+                    회원ID :<input type="text" name="id" id=""> <br>
+                    비밀번호 :<input type="password" name="pw" id=""> <br>
+                    <input type="submit" value="제출">
+                    <input type="button" value="회원가입">
+                </form>
+            </div>
+            <!-- <a> 외부문서로 이동(href=절대주소) , 내부문서로 이동(href=상대주소), 문서내이동  -->
+            <div class="bookmark">
+                <h2>즐겨찾기</h2>
+                <a href="http://mis.donga.ac.kr" target="_blank">경영정보학과</a> <br>
+                <a href="./gallery.html">갤러리</a> <br>
+                <a href="#home">홈이동</a> <br>
+            </div>
+
+        </aside>
+
+    </section>
+    <footer>
+        copyright@정민수
+        <div class="sns">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </footer>
+</body>
+</html> 
