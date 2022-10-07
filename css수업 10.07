@@ -85,6 +85,11 @@
         aside{
             flex:1;
         }
+        footer{
+            background-color: darkgray;
+            color: whitesmoke;
+            text-align: center;
+        }
         
     </style>
 </head>
